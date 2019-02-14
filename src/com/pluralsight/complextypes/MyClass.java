@@ -1,4 +1,4 @@
-package com.pluralsight.complextypes;
+package com.pluralsight.complextypes.complextypes;
 
 public class MyClass {
 
