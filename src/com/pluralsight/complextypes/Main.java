@@ -242,7 +242,7 @@ public class Main {
 
         // a Flight does not know how to add1package -- so the following is invalid:
         //f.add1Package(1.0f, 2.5f, 3.0f);
-*/
+
         Flight f1 = new Flight();
         System.out.print("F1 Seats:  ");
         System.out.println(f1.getSeats());
@@ -303,7 +303,7 @@ public class Main {
         else
             System.out.println("Objects are not equal");
 
-
+        // classes inherited from the pilot class
         Flight f7 = new Flight(624);
         Flight f8 = new Flight(404);
 
@@ -335,6 +335,18 @@ public class Main {
         else
             System.out.println("Dave cannot accept Flight 8");
 
+*/
+
+        // 20180730 Iheritance and Constructors
+        Flight f175 = new Flight(175);
+
+        CargoFlight cf = new CargoFlight();
+
+        //CargoFlight cf294 = new CargoFlight(294); //even tho the base has a constructor that takes a flight number, cargoflight does not
+
+        CargoFlight cf294 = new CargoFlight(294);
+
+        CargoFlight cf85 = new CargoFlight(85, 2000.0f);
 
 
 

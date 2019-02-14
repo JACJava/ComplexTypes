@@ -52,6 +52,8 @@ public class Flight {
             this.flightNumber = flightNumber; //right hand is the parameter, left hand is the field
         }
 
+        // Constructors
+
         public Flight() {} // constructor that takes no parameters
 
         public Flight(int flightNumber){ //constructor that takes 1 parameter, just flight number
@@ -61,6 +63,9 @@ public class Flight {
         public Flight(char flightClass){ //constructor that takes 1 parameter, just flight class
             this.flightClass = flightClass; //right hand is the parameter, left hand is the field
         }
+
+
+
 
         public void addPassengers(Passenger... list){
             if(hasSeating(list.length)){
