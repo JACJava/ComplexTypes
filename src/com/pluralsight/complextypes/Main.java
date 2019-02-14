@@ -24,8 +24,10 @@ public class Main {
         System.out.print("Flight 2 Passenger Count is:  ");
         System.out.println(flight2.passengers);
 
+    */
+        /*
         MyClass m = new MyClass();
-        m.showSum(7.5f, 1.4f, 0);
+        m.showSum(7.5f, 1.4f, 3);
         System.out.println("I'm back");
         */
 
@@ -39,14 +41,14 @@ public class Main {
         lax1.add1Passenger();
         lax1.add1Passenger();
         System.out.print("LAX 1 Passenger Count is:  ");
-        System.out.println(lax1.passengers);
+        System.out.println(lax1.getPassengers()); //created a "getter" so passengers can be private
 
         lax2.add1Passenger();
         lax2.add1Passenger();
         lax2.add1Passenger();
         System.out.print("LAX 2 Passenger Count is:  ");
-        System.out.println(lax2.passengers);
-/*
+        System.out.println(lax2.getPassengers()); //created a "getter"
+
         // Null is a reference literal, represents an uncreated object
         Flight lax3 = null;
         if (lax1.hasRoom(lax2)) { //calling hasRoom with lax1 object, lax2 is passed in and will be "f2"
@@ -55,11 +57,18 @@ public class Main {
 
         if (lax3 != null) {
             System.out.print("LAX 3 Passenger Count is:  ");
-            System.out.println(lax3.passengers);
+            System.out.println(lax3.getPassengers());  //created a "getter"
         }
 
+        // 20180725 Accessors and Mutators
+        Flight slcToNyc = new Flight();
+        slcToNyc.setSeats(150);
+        System.out.print("Seats on slcToNyc:  ");
+        System.out.println(slcToNyc.getSeats());
+
+        // 20180725 Class Initializers and Constructors Chaining Constructors
         Passenger passenger1 = new Passenger();
-        int checkedBags = 1;
+        int checkedBags = 5;
         passenger1.setCheckedBags(checkedBags);
         passenger1.figureOutBagFee();
         System.out.print("Checked Bags:  ");
@@ -78,7 +87,13 @@ public class Main {
         System.out.print("Val 2:  ");
         System.out.println(val2);
 
-*/
+        OverInitializedClass c = new OverInitializedClass();
+        System.out.print("The Field:  ");
+        System.out.println(c.getTheField());
+
+
+
+
 
     }
 
